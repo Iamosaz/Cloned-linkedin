@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Media Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +33,45 @@
        </div>
        <div class="navbar-right">
            <div class="online">
-               <img src="images/user-1.png" class="nav-profile-img">
+               <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+           </div>
+       </div>
+       <!----------- profile-drop-down menu ------------>
+       <div class="profile-menu-wrap" id="profileMenu">
+           <div class="profile-menu">
+                  <div class="user-info">
+                       <img src="images/user-1.png">
+                       <div>
+                           <h3>Rayan Walton</h3>
+                           <a href="#">See your profile</a>
+                       </div>
+                  </div>
+                  <hr>
+                  <a href="#" class="profile-menu-link">
+                     <img src="images/feedback.png">
+                     <p>Give feedback</p>
+                     <span>></span>
+                  </a>
+                  <a href="#" class="profile-menu-link">
+                     <img src="images/setting.png">
+                     <p>Settings & Privacy</p>
+                     <span>></span>
+                  </a>
+                  <a href="#" class="profile-menu-link">
+                     <img src="images/help.png">
+                     <p>Help & Support</p>
+                     <span>></span>
+                  </a>
+                  <a href="#" class="profile-menu-link">
+                     <img src="images/display.png">
+                     <p>Display & Accessiblity</p>
+                     <span>></span>
+                  </a>
+                  <a href="#" class="profile-menu-link">
+                     <img src="images/logout.png">
+                     <p>Logout</p>
+                     <span>></span>
+                  </a>
            </div>
        </div>
         
@@ -93,12 +134,209 @@
                <li><img src="images/photo.png">Photo</li>
                <li><img src="images/video.png">Video</li>
                <li><img src="images/event.png">Event</li>
+               <li>Post</li>
             </div>
           </div>
+          <div class="sort-by">
+            <hr>
+            <p>sort by:<span>top <img src="images/down-arrow.png"></span></p>
+          </div>
+
+         <div class="post">
+            <div class="post-author">
+               <img src="images/user-3.png">
+               <div>
+                  <h1>Benjamin Leo</h1>
+                  <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                  <small>2 hours ago</small>
+               </div>
+            </div>
+            <p>The success of every website depends on search engine optimisation (SEO) and digital marketing strategy. If you are on frist page of all major search engines then you are ahead among your competitors.</p>
+            <img src="images/post-image-1.png" width="100%">
+
+
+         <div class="post-stats">
+            <div>
+               <img src="images/thumbsup.png">
+               <img src="images/love.png">
+               <img src="images/clap.png">
+               <span class="liked-users">evelyn peters and 105 others</span>
+            </div>
+            <div>
+               <span>25 comment &middot; 60 shares</span>
+            </div>
+         </div>
+         <div class="post-activity">
+            <div>
+               <img src="images/user-1.png" class="post-activity-user-icon">
+               <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+               <img src="images/like.png">
+               <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+               <img src="images/comment.png">
+               <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+               <img src="images/share.png">
+               <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+               <img src="images/send.png">
+               <span>Send</span>
+            </div>
+         </div>
+      </div>
+         
+      <div class="post">
+          <div class="post-author">
+              <img src="images/user-4.png">
+              <div>
+               <h1>Clearance George</h1>
+               Founder and CEO at Gellelio Group | Angel Investor</small>
+               <small>6 hours ago</small>
+              </div>
+          </div>
+          <p>The success of every website depends on search engine optimisation (SEO) and digital marketing strategy. If you are on frist page of all major search engines then you are ahead among your competitors.</p>
+          <img src="images/post-image-2.png" width="100%">
+
+          <div class="post-stats">
+              <div>
+               <img src="images/thumbsup.png">
+               <img src="images/love.png">
+               <img src="images/clap.png">
+               <span class="liked-users">evelyn peters and 105 others</span>
+              </div>
+              <div>
+                  <span>25 comment &middot; 60 shares</span>
+              </div>
+          </div>
+          <div class="post-activity">
+              <div>
+                 <img src="images/user-1.png" class="post-activity-user-icon">
+                 <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+              </div>
+              <div class="post-activity-link">
+                 <img src="images/like.png">
+                 <span>Like</span> 
+              </div>
+              <div class="post-activity-link">
+                 <img src="images/comment.png">
+                 <span>Comment</span>
+              </div>
+              <div class="post-activity-link">
+                 <img src="images/share.png">
+                 <span>Share</span>
+              </div>
+              <div class="post-activity-link">
+                  <img src="images/send.png">
+                  <span>Send</span>
+              </div>
+          </div>
+
+      </div>
+         
+      <div class="post">
+         <div class="post-author">
+             <img src="images/user-4.png">
+             <div>
+              <h1>James George</h1>
+              Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>8 hours ago</small>
+             </div>
+         </div>
+         <p>The success of every website depends on search engine optimisation (SEO) and digital marketing strategy. If you are on frist page of all major search engines then you are ahead among your competitors.</p>
+         <img src="images/post-image-3.png" width="100%">
+
+         <div class="post-stats">
+             <div>
+              <img src="images/thumbsup.png">
+              <img src="images/love.png">
+              <img src="images/clap.png">
+              <span class="liked-users">evelyn peters and 105 others</span>
+             </div>
+             <div>
+                 <span>25 comment &middot; 60 shares</span>
+             </div>
+         </div>
+         <div class="post-activity">
+             <div>
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+             </div>
+             <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span> 
+             </div>
+             <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Comment</span>
+             </div>
+             <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+             </div>
+             <div class="post-activity-link">
+                 <img src="images/send.png">
+                 <span>Send</span>
+             </div>
+         </div>
+
+     </div>
+
+     <div class="post">
+      <div class="post-author">
+          <img src="images/user-4.png">
+          <div>
+           <h1>Evelyn Peters</h1>
+           Founder and CEO at Gellelio Group | Angel Investor</small>
+           <small>4 hours ago</small>
+          </div>
+      </div>
+      <p>The success of every website depends on search engine optimisation (SEO) and digital marketing strategy. If you are on frist page of all major search engines then you are ahead among your competitors.</p>
+      <img src="images/post-image-4.png" width="100%">
+
+      <div class="post-stats">
+          <div>
+           <img src="images/thumbsup.png">
+           <img src="images/love.png">
+           <img src="images/clap.png">
+           <span class="liked-users">evelyn peters and 105 others</span>
+          </div>
+          <div>
+              <span>25 comment &middot; 60 shares</span>
+          </div>
+      </div>
+      <div class="post-activity">
+          <div>
+             <img src="images/user-1.png" class="post-activity-user-icon">
+             <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+          </div>
+          <div class="post-activity-link">
+             <img src="images/like.png">
+             <span>Like</span> 
+          </div>
+          <div class="post-activity-link">
+             <img src="images/comment.png">
+             <span>Comment</span>
+          </div>
+          <div class="post-activity-link">
+             <img src="images/share.png">
+             <span>Share</span>
+          </div>
+          <div class="post-activity-link">
+              <img src="images/send.png">
+              <span>Send</span>
+          </div>
+      </div>
+
+  </div>
 
 
 
-       </div>
+      </div>
        <!-----------right-sidebar-------->
        <div class="right-sidebar">
          <div class="sidebar-news">
@@ -153,8 +391,15 @@
     </div>
 
     
+<script>
 
+     let profileMenu = document.getElementById("profileMenu");
 
+     function toggleMenu(){
+      profileMenu.classList.toggle("open-menu");
+     }
+     
+</script>    
 
 </body>
 </html>  
